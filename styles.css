@@ -1,0 +1,106 @@
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+  background-color: #252525;
+
+  color: white;
+  border: 3px solid brown;
+  border-radius: 35px;
+  box-shadow: 0 0 10px black;
+}
+
+ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+section.Hero {
+  background: url("pexels-jagheterjohann-1254140.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    /* display: flex; */
+    background-repeat: no-repeat;
+    justify-content: center;
+    color: aliceblue;
+    border-radius: 15px;
+    margin-top: 20px;
+    background-position: fixed;
+    text-align: center;
+
+    
+} 
+.Hero H1{
+  align-items: center;
+  justify-content: center;
+  color: #2980b9;
+  
+}
+
+/* Card Container */
+.card-container {
+  display: flex;    
+  margin: 15px;               /* Uses Flexbox for layout */
+  flex-wrap: wrap;                 /* Allows cards to wrap to the next line on smaller screens */
+  gap: 20px;                       /* Creates space between each card */
+  justify-content: center;         /* Centers the cards horizontally */
+}
+
+/* Card Styles */
+.card {
+  background-color: #fff;          /* White background for the card */
+  border-radius: 8px;              /* Rounded corners */
+  overflow: hidden;                /* Ensures child elements don't overflow the rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+  width: 300px;                    /* Fixed width for each card */
+  transition: transform 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-5px);     /* Lifts the card up slightly on hover */
+}
+
+/* Card Image */
+.card-image {
+  width: 100%;                     /* Ensures the image fills the width of the card */
+  display: block;                  /* Removes any inline spacing issues */
+}
+
+/* Card Content */
+.card-content {
+  padding: 15px;                   /* Adds space inside the card around the text and button */
+}
+
+/* Card Title */
+.card-title {
+  margin-top: 0;                   /* Removes default top margin for the heading */
+  font-size: 1.5em;                /* Adjusts the size of the title */
+}
+
+/* Card Text */
+.card-text {
+  color: #555;                     /* Dark gray color for the text */
+  line-height: 1.5;                /* Increases line spacing for readability */
+}
+
+/* Card Button */
+.card-button {
+  display: inline-block;           /* Allows padding and margin to be applied */
+  margin-top: 10px;                /* Space above the button */
+  padding: 10px 15px;              /* Padding inside the button */
+  background-color: #3498db;       /* Blue background color */
+  color: #fff;                   /* White text color */
+  text-decoration: none;          /* Removes underline from the link */
+  border-radius: 4px;             /* Rounded corners on the button */
+  transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Button Hover Effect */
+.card-button:hover {
+  background-color: #2980b9;      /* Darker blue when hovered */
+}
